@@ -21,12 +21,10 @@ const theme = responsiveFontSizes(
     },
     palette: {
       primary: {
-        main: "#5f75b3ff",
-        text: "#5c5c5cff",
-        dark: "#222c48ff",
-        lighter: "#f2f3f8ff",
-        light: "#99a7cfff",
-        lightest: "#f4f7ffff",
+        main: "#fff",
+        dark: "#040406ff",
+        light: "#1f1f24",
+        lighter: "#17171bff",
       },
       secondary: {
         main: "#1f66ffff",

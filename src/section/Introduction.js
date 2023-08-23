@@ -3,8 +3,12 @@ import React from "react";
 
 const Introduction = () => {
   return (
-    <Box mt={2}>
-      <Typography fontFamily={"poppins"} fontSize={"1.5rem"}>
+    <Box mt={4}>
+      <Typography
+        fontFamily={"poppins"}
+        fontSize={"1.5rem"}
+        textAlign={"center"}
+      >
         INTRODUCTION
       </Typography>
       <Box
@@ -15,6 +19,7 @@ const Introduction = () => {
           borderRadius: 1,
           display: "flex",
           overflow: "hidden",
+          mt: 1,
         }}
       >
         <Box

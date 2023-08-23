@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import Introduction from "../section/Introduction";
 import WorkExperience from "../section/WorkExperience";
+import Projects from "../section/Projects";
 
 const HeroSection = () => {
   return (
@@ -34,6 +35,7 @@ const HeroSection = () => {
       </Box>
       <Introduction />
       <WorkExperience />
+      <Projects />
     </Box>
   );
 };

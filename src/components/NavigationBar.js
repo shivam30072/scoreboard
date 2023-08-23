@@ -43,6 +43,7 @@ const NavigationBar = () => {
       flexDirection={"column"}
       borderRight={"2px solid #1f1f24"}
       height={"inherit"}
+      fontFamily={"poppins"}
     >
       <Box
         pl={1}
@@ -54,7 +55,7 @@ const NavigationBar = () => {
         <Avatar sx={{ bgcolor: "primary.light", marginTop: "4px" }}>S</Avatar>
         <Box>
           <Typography
-            sx={{ fontSize: "23px", marginLeft: "8px" }} // backgroundColor: "red"
+            sx={{ fontSize: "23px", marginLeft: "8px", fontFamily: "poppins" }} // backgroundColor: "red"
           >
             Shivam Kumar
           </Typography>

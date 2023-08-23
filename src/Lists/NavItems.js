@@ -24,7 +24,7 @@ const NavItems = ({ header, Icon }) => {
       >
         <Icon color="primary" />
       </Avatar>
-      <Typography ml={1} mt={0.5}>
+      <Typography ml={1} mt={0.5} fontFamily={"poppins"}>
         {header}
       </Typography>
     </Box>

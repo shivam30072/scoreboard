@@ -2,17 +2,12 @@ import { Box, Chip, Typography } from "@mui/material";
 import React from "react";
 import workingmenanimation from "../workingman.json";
 import Lottie from "lottie-react";
+import Header from "../Lists/Header";
 
 const WorkExperience = () => {
   return (
     <Box mt={4}>
-      <Typography
-        fontFamily={"poppins"}
-        fontSize={"1.5rem"}
-        textAlign={"center"}
-      >
-        Work Experience
-      </Typography>
+      <Header title={"Work Experience"} />
       <Box display={"flex"} justifyContent={"flex-start"} ml={0} gap={2}>
         <Lottie
           animationData={workingmenanimation}

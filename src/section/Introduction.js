@@ -1,16 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
+import Header from "../Lists/Header";
 
 const Introduction = () => {
   return (
     <Box mt={4}>
-      <Typography
-        fontFamily={"poppins"}
-        fontSize={"1.5rem"}
-        textAlign={"center"}
-      >
-        INTRODUCTION
-      </Typography>
+      <Header title={"INTRODUCTION"} />
+
       <Box
         sx={{
           backgroundColor: "primary.light",

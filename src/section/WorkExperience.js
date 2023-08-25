@@ -14,10 +14,10 @@ const WorkExperience = () => {
           style={{ minWidth: "50%" }}
           loop={false}
         />
-        <Box mt={8}>
+        <Box mt={8} pr={4.5}>
           <Atrributes text={"Company - Sigroo Technologies"} />
           <Atrributes text={"Role - Front-end developer"} />
-          <Box display={"flex"}>
+          <Box display={"flex"} flexWrap={"wrap"}>
             <Atrributes text={"Tech stack-"} />
             <Atrributes label={"Reactjs"} bgcolor={"#42a5f5"} />
             <Atrributes label={"Nextjs"} bgcolor={"#8bc34a"} />

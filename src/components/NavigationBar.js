@@ -5,6 +5,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import EmojiPeopleIcon from "@mui/icons-material/EmojiPeople";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
+import PsychologyIcon from "@mui/icons-material/Psychology";
 import NavItems from "../Lists/NavItems";
 
 const navItems = [
@@ -25,11 +26,16 @@ const navItems = [
   },
   {
     id: 3,
-    header: "About me",
+    header: "What I Do",
     icon: EmojiPeopleIcon,
   },
   {
     id: 4,
+    header: "Skills",
+    icon: PsychologyIcon,
+  },
+  {
+    id: 5,
     header: "Contact",
     icon: ContactPageIcon,
   },

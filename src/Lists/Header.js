@@ -3,7 +3,7 @@ import React from "react";
 
 const Header = ({ title }) => {
   return (
-    <Typography fontFamily={"poppins"} fontSize={"1.5rem"} textAlign={"center"}>
+    <Typography variant="body2" textAlign={"center"}>
       {title}
     </Typography>
   );

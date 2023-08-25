@@ -67,12 +67,16 @@ const theme = responsiveFontSizes(
         fontSize: "1.75rem",
       },
       h4: {
-        fontWeight: "normal",
+        fontWeight: "poppins",
         fontSize: "1.5rem",
       },
       body1: {
-        fontFamily: "Fira Sans Condensed",
+        fontFamily: "poppins",
         fontSize: "1rem",
+      },
+      body2: {
+        fontFamily: "poppins",
+        fontSize: "1.5rem",
       },
       button: {
         letterSpacing: ".1rem",

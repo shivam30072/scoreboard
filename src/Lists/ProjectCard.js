@@ -1,19 +1,32 @@
-import { Box, Button, Rating, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Chip,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Typography,
+} from "@mui/material";
 import React, { useState } from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import CallMadeIcon from "@mui/icons-material/CallMade";
 
 const ProjectCard = ({ project }) => {
   const [show, setShow] = useState(false);
+  const [open, setOpen] = useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <>
       <Box
-        width={400}
-        height={400}
-        // bgcolor={"#7db1b4"}
-        bgcolor={"#b6e0f6"}
+        width={{ xs: "100%", md: 480 }}
+        px={{ xs: 2, md: 0 }}
+        height={300}
         position={"relative"}
         display={"flex"}
+        borderRadius={1}
         justifyContent={"center"}
         alignItems={"center"}
         onMouseEnter={() => setShow(true)}
@@ -21,20 +34,13 @@ const ProjectCard = ({ project }) => {
         sx={{
           transition: "transform 0.3s",
           transform: show ? "scale(1.05)" : "scale(1)",
+          backgroundImage: `url(${project.image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: show ? 0.5 : 1,
+          boxShadow: !show ? "2px 4px 10px rgba(242, 239, 234, 0.3)" : "none",
         }}
       >
-        <Typography
-          bgcolor={"#fff"}
-          display={show ? "none" : "flex"}
-          fontFamily={"poppins"}
-          color={"primary.dark"}
-          p={1}
-          borderRadius={1}
-          fontSize={30}
-        >
-          {project.name}
-        </Typography>
-
         <Box
           sx={{
             position: "absolute",
@@ -45,40 +51,101 @@ const ProjectCard = ({ project }) => {
             height: "100%",
             transform: `scale(${show ? 1 : 0.5})`,
             transition: "opacity 0.3s, transform 0.3s",
-            pointerEvents: show ? "auto" : "none",
             zIndex: 1,
-            color: "primary.dark",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            bgcolor: "#609acc",
           }}
         >
           <Box
-            display={"flex"}
-            flexDirection={"column"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            p={2}
+            sx={{
+              position: "relative",
+              zIndex: 2,
+              bgcolor: "#7c0ffd",
+              borderRadius: 1,
+            }}
           >
-            <Typography fontFamily={"poppins"} fontWeight={900}>
-              {project.desc}
-            </Typography>
-            <Box mt={1}>
-              <Typography fontFamily={"poppins"} sx={{ cursor: "pointer" }}>
-                <GitHubIcon sx={{ marginRight: 1 }} />
-                Checkout the code here
-              </Typography>
-              <Typography fontFamily={"poppins"} sx={{ cursor: "pointer" }}>
-                <CallMadeIcon sx={{ marginRight: 1, marginTop: 0 }} />
-                Live demo here
-              </Typography>
-            </Box>
+            <Button
+              sx={{ fontFamily: "poppins" }}
+              onClick={() => {
+                setOpen(true);
+              }}
+            >
+              LEARN MORE
+            </Button>
           </Box>
         </Box>
+        <Dialog
+          fullWidth={true}
+          maxWidth="md"
+          open={open}
+          onClose={handleClose}
+          scroll={"body"}
+          aria-labelledby="scroll-dialog-title"
+          aria-describedby="scroll-dialog-description"
+        >
+          <DialogTitle id="scroll-dialog-title">{project.name}</DialogTitle>
+          <DialogContent>
+            <Box
+              sx={{
+                height: 500,
+                backgroundImage: `url(${project.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></Box>
+            <DialogContentText id="scroll-dialog-description">
+              <Atrributes text={project.desc} />
+              {project.tech.map((t, i) => (
+                <Atrributes key={i} label={t} bgcolor={"#cccccc"} />
+              ))}
+            </DialogContentText>
+            <Box width={"fit-content"} mt={1} display={"flex"} gap={1.5}>
+              <Button
+                variant="contained"
+                size="small"
+                sx={{ bgcolor: "#33bbcf", "&:hover": { bgcolor: "#319eae" } }}
+              >
+                GO TO SOURCE CODE
+              </Button>
+              <Button
+                variant="contained"
+                size="small"
+                sx={{ bgcolor: "#33bbcf", "&:hover": { bgcolor: "#319eae" } }}
+              >
+                GO TO PROJECT
+              </Button>
+            </Box>
+          </DialogContent>
+        </Dialog>
       </Box>
-      {/* jjj */}
     </>
+  );
+};
+
+const Atrributes = ({ text, label, bgcolor, children }) => {
+  if (text) {
+    return (
+      <>
+        <Typography fontFamily={"poppins"} mt={1}>
+          {text}
+        </Typography>
+        {children}
+      </>
+    );
+  }
+  return (
+    <Chip
+      label={label}
+      sx={{
+        borderRadius: 1,
+        bgcolor: bgcolor,
+        fontWeight: 900,
+        fontFamily: "poppins",
+        marginTop: 1,
+        marginRight: 1,
+      }}
+    />
   );
 };
 

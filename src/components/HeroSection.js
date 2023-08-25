@@ -3,6 +3,8 @@ import React from "react";
 import Introduction from "../section/Introduction";
 import WorkExperience from "../section/WorkExperience";
 import Projects from "../section/Projects";
+import WhatIDo from "../section/WhatIDo";
+import Skills from "../section/Skills";
 
 const HeroSection = () => {
   return (
@@ -36,6 +38,8 @@ const HeroSection = () => {
       <Introduction />
       <WorkExperience />
       <Projects />
+      <WhatIDo />
+      <Skills />
     </Box>
   );
 };

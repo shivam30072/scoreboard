@@ -42,6 +42,14 @@ const navItems = [
 ];
 
 const NavigationBar = () => {
+  const handleSelect = (selectedItem) => {
+    console.log(selectedItem);
+    window.scroll({
+      top: 2000,
+      // left: 1000,
+      behavior: "smooth",
+    });
+  };
   return (
     <Box
       color={"white"}
@@ -72,7 +80,12 @@ const NavigationBar = () => {
       </Box>
       <Box mt={2} pl={2}>
         {navItems.map((item) => (
-          <NavItems key={item.id} header={item.header} Icon={item.icon} />
+          <NavItems
+            key={item.id}
+            header={item.header}
+            Icon={item.icon}
+            handleSelect={handleSelect}
+          />
         ))}
       </Box>
     </Box>

@@ -1,14 +1,21 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React from "react";
+import React, { forwardRef } from "react";
 import workingmenanimation from "../workingman.json";
 import Lottie from "lottie-react";
 import Header from "../Lists/Header";
 
-const WorkExperience = () => {
+const WorkExperience = forwardRef((props, ref) => {
+  console.log(ref.current, "fee");
   return (
-    <Box mt={4}>
+    <Box mt={4} ref={ref}>
       <Header title={"Work Experience"} />
-      <Box display={"flex"} justifyContent={"flex-start"} ml={0} gap={2}>
+      <Box
+        display={"flex"}
+        justifyContent={"flex-start"}
+        flexDirection={{ xs: "column", sm: "column", md: "row" }}
+        ml={0}
+        gap={2}
+      >
         <Lottie
           animationData={workingmenanimation}
           style={{ minWidth: "50%" }}
@@ -39,7 +46,7 @@ const WorkExperience = () => {
       </Box>
     </Box>
   );
-};
+});
 
 const Atrributes = ({ text, label, bgcolor, children }) => {
   if (text) {

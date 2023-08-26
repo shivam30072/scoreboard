@@ -11,11 +11,12 @@ const Introduction = () => {
         sx={{
           backgroundColor: "primary.light",
           width: "inherit",
-          height: 200,
+          height: { xs: 500, sm: 200 },
           borderRadius: 1,
           display: "flex",
           overflow: "hidden",
           mt: 1,
+          flexDirection: { xs: "column", sm: "row" },
         }}
       >
         <Box

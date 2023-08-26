@@ -88,17 +88,31 @@ const Skills = () => {
 
       <Box px={4.5}>
         <Typography variant="body1">That I Know or Touched</Typography>
-        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            flexWrap: "wrap",
+            justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+          }}
+        >
           {knownSkills.map((skill, i) => (
-            <SkillBar key={skill} skill={skill} />
+            <SkillBar key={skill.name} skill={skill} />
           ))}
         </Box>
         <Typography variant="body1" mt={1.5}>
           That I hope to learn in future
         </Typography>
-        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+        <Box
+          sx={{
+            display: "flex",
+            gap: 2,
+            flexWrap: "wrap",
+            justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+          }}
+        >
           {skillsInFuture.map((skill, i) => (
-            <SkillBar key={skill} skill={skill} />
+            <SkillBar key={skill.name} skill={skill} />
           ))}
         </Box>
       </Box>

@@ -27,10 +27,10 @@ const SkillBar = ({ skill }) => {
         }}
         sx={{
           cursor: "pointer",
-          width: "10rem",
+          width: { xs: "6rem", sm: "8rem", md: "10rem" },
           "&:hover": { bgcolor: "#319eae" },
           borderRadius: 1,
-          bgcolor: "#f5e4e4",
+          bgcolor: "#fff",
           fontWeight: 900,
           fontFamily: "poppins",
           marginTop: 1,

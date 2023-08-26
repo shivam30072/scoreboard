@@ -7,8 +7,10 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
+  IconButton,
   Typography,
 } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import React, { useState } from "react";
 
 const ProjectCard = ({ project }) => {
@@ -85,6 +87,18 @@ const ProjectCard = ({ project }) => {
           aria-describedby="scroll-dialog-description"
         >
           <DialogTitle id="scroll-dialog-title">{project.name}</DialogTitle>
+          <IconButton
+            aria-label="close"
+            onClick={handleClose}
+            sx={{
+              position: "absolute",
+              right: 8,
+              top: 0,
+              color: (theme) => theme.palette.grey[500],
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
           <DialogContent>
             <Box
               sx={{

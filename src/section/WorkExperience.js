@@ -1,11 +1,12 @@
 import { Box, Chip, Typography } from "@mui/material";
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import workingmenanimation from "../workingman.json";
 import Lottie from "lottie-react";
 import Header from "../Lists/Header";
 
 const WorkExperience = forwardRef((props, ref) => {
-  console.log(ref.current, "fee");
+  // function handleClick() {
+  // }
   return (
     <Box mt={4} ref={ref}>
       <Header title={"Work Experience"} />

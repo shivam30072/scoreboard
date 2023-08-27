@@ -5,8 +5,14 @@ import { Box, Typography } from "@mui/material";
 import { useRef } from "react";
 
 export default function Home() {
-  const refContainer = useRef(null);
-  console.log(refContainer.current);
+  const workRef = useRef(null);
+  const homeRef = useRef(null);
+  const projectRef = useRef(null);
+  const whatIDoRef = useRef(null);
+  const skillsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // console.log(refContainer.current);
   return (
     <Box display={"flex"} minHeight={"100vh"} bgcolor={"primary.dark"}>
       <Box
@@ -18,13 +24,27 @@ export default function Home() {
           bgcolor: { md: "black" },
         }}
       >
-        <NavigationBar />
+        <NavigationBar
+          workRef={workRef}
+          homeRef={homeRef}
+          projectRef={projectRef}
+          whatIDoRef={whatIDoRef}
+          skillsRef={skillsRef}
+          contactRef={contactRef}
+        />
       </Box>
       <Box
         // overflowY={"auto"}
         sx={{ width: { xs: "100%" }, marginLeft: { md: "17%" } }}
       >
-        <HeroSection ref={refContainer} />
+        <HeroSection
+          workRef={workRef}
+          homeRef={homeRef}
+          projectRef={projectRef}
+          whatIDoRef={whatIDoRef}
+          skillsRef={skillsRef}
+          contactRef={contactRef}
+        />
       </Box>
     </Box>
   );

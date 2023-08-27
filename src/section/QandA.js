@@ -16,6 +16,7 @@ const QandA = () => {
       <Box
         px={4.5}
         mt={3}
+        ml={{ md: 6, lg: 0 }}
         display={"flex"}
         flexDirection={"column"}
         alignItems={{ xs: "center", md: "flex-start" }}

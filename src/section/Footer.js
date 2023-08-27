@@ -18,7 +18,9 @@ const Footer = () => {
       px={4.5}
       mt={12}
     >
-      <Typography fontWeight={900}>copyright&copy;2023 Shivam kumar</Typography>
+      <Typography fontWeight={900}>
+        copyright&copy;2023 shivamkumar181211@gmail.com
+      </Typography>
       <Box display={"flex"} gap={1} sx={{ cursor: "pointer" }}>
         <LinkedInIcon
           sx={{

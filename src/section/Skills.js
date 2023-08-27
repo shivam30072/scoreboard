@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { forwardRef } from "react";
 import Header from "../Lists/Header";
 import SkillBar from "../Lists/SkillBar";
 
-const Skills = () => {
+const Skills = forwardRef((props, ref) => {
   const knownSkills = [
     {
       name: "JAVASCRIPT",
@@ -83,24 +83,31 @@ const Skills = () => {
   ];
 
   return (
-    <Box mt={4} borderRadius={1} pb={1}>
+    <Box mt={4} borderRadius={1} pb={1} ref={ref}>
       <Header title={"SKILLS"} />
 
-      <Box px={4.5}>
-        <Typography variant="body1">That I Know or Touched</Typography>
+      <Box pl={{ md: 4.5 }}>
+        <Typography variant="body1" ml={{ md: 6, lg: 0 }}>
+          That I Know or Touched
+        </Typography>
         <Box
           sx={{
             display: "flex",
             gap: 2,
             flexWrap: "wrap",
-            justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+            justifyContent: {
+              xs: "center",
+              sm: "center",
+              md: "center",
+              lg: "flex-start",
+            },
           }}
         >
           {knownSkills.map((skill, i) => (
             <SkillBar key={skill.name} skill={skill} />
           ))}
         </Box>
-        <Typography variant="body1" mt={1.5}>
+        <Typography variant="body1" mt={1.5} ml={{ md: 6, lg: 0 }}>
           That I hope to learn in future
         </Typography>
         <Box
@@ -108,7 +115,12 @@ const Skills = () => {
             display: "flex",
             gap: 2,
             flexWrap: "wrap",
-            justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+            justifyContent: {
+              xs: "center",
+              sm: "center",
+              md: "center",
+              lg: "flex-start",
+            },
           }}
         >
           {skillsInFuture.map((skill, i) => (
@@ -118,6 +130,6 @@ const Skills = () => {
       </Box>
     </Box>
   );
-};
+});
 
 export default Skills;

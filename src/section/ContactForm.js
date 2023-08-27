@@ -6,15 +6,16 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { forwardRef } from "react";
 import Header from "../Lists/Header";
 
-const ContactForm = () => {
+const ContactForm = forwardRef((props, ref) => {
   return (
-    <Box mt={4} pt={2}>
+    <Box mt={4} pt={2} ref={ref}>
       <Header title={"CONTACT"}>{"(form under maintenance)"}</Header>
       <Box
         px={4.5}
+        ml={{ md: 6, lg: 0 }}
         mt={2}
         display={"flex"}
         flexDirection={"column"}
@@ -87,6 +88,6 @@ const ContactForm = () => {
       </Box>
     </Box>
   );
-};
+});
 
 export default ContactForm;

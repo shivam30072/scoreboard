@@ -1,16 +1,17 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
+import React, { forwardRef } from "react";
 import Header from "../Lists/Header";
 
-const WhatIDo = () => {
+const WhatIDo = forwardRef((props, ref) => {
   return (
-    <Box mt={4} borderRadius={1} pb={1}>
+    <Box mt={4} borderRadius={1} pb={1} ref={ref}>
       <Header title={"What I Do"} />
 
       <Box
         display={"flex"}
         flexDirection={{ xs: "column", sm: "row" }}
         mt={4}
+        ml={{ md: 6, lg: 0 }}
         px={4.5}
         gap={1.5}
       >
@@ -34,6 +35,7 @@ const WhatIDo = () => {
         flexDirection={{ xs: "column", sm: "row" }}
         mt={4}
         px={4.5}
+        ml={{ md: 6, lg: 0 }}
         gap={1.5}
       >
         <Box>
@@ -56,6 +58,7 @@ const WhatIDo = () => {
         flexDirection={{ xs: "column", sm: "row" }}
         mt={4}
         px={4.5}
+        ml={{ md: 6, lg: 0 }}
         gap={1.5}
       >
         <Box>
@@ -75,6 +78,6 @@ const WhatIDo = () => {
       </Box>
     </Box>
   );
-};
+});
 
 export default WhatIDo;

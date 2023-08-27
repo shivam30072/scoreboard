@@ -4,7 +4,7 @@ import Header from "../Lists/Header";
 
 const Introduction = () => {
   return (
-    <Box mt={4}>
+    <Box mt={4} mr={{ md: 7, lg: 0 }}>
       <Header title={"INTRODUCTION"} />
 
       <Box
@@ -12,6 +12,7 @@ const Introduction = () => {
           backgroundColor: "primary.light",
           width: "inherit",
           height: { xs: 500, sm: 200 },
+          marginLeft: { md: 10, lg: 0 },
           borderRadius: 1,
           display: "flex",
           overflow: "hidden",

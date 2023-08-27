@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
   return (
     <>
       <Box
-        width={{ xs: "100%", md: 480 }}
+        width={{ xs: 250, sm: 350, md: 480 }}
         px={{ xs: 2, md: 0 }}
         height={300}
         position={"relative"}
@@ -103,7 +103,7 @@ const ProjectCard = ({ project }) => {
             <Box
               sx={{
                 height: 500,
-                backgroundImage: `url(${project.image})`,
+                backgroundImage: `url(${project.dialogImg})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
@@ -115,20 +115,32 @@ const ProjectCard = ({ project }) => {
               ))}
             </DialogContentText>
             <Box width={"fit-content"} mt={1} display={"flex"} gap={1.5}>
-              <Button
-                variant="contained"
-                size="small"
-                sx={{ bgcolor: "#33bbcf", "&:hover": { bgcolor: "#319eae" } }}
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                GO TO SOURCE CODE
-              </Button>
-              <Button
-                variant="contained"
-                size="small"
-                sx={{ bgcolor: "#33bbcf", "&:hover": { bgcolor: "#319eae" } }}
+                <Button
+                  variant="contained"
+                  size="small"
+                  sx={{ bgcolor: "#33bbcf", "&:hover": { bgcolor: "#319eae" } }}
+                >
+                  GO TO SOURCE CODE
+                </Button>
+              </a>
+              <a
+                href={project.liveApp}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                GO TO PROJECT
-              </Button>
+                <Button
+                  variant="contained"
+                  size="small"
+                  sx={{ bgcolor: "#33bbcf", "&:hover": { bgcolor: "#319eae" } }}
+                >
+                  GO TO PROJECT
+                </Button>
+              </a>
             </Box>
           </DialogContent>
         </Dialog>

@@ -16,8 +16,8 @@ const navItems = [
   },
   {
     id: 1,
-    header: "Work Experience",
-    icon: WorkIcon,
+    header: "What I Do",
+    icon: EmojiPeopleIcon,
   },
   {
     id: 2,
@@ -26,9 +26,10 @@ const navItems = [
   },
   {
     id: 3,
-    header: "What I Do",
-    icon: EmojiPeopleIcon,
+    header: "Work Experience",
+    icon: WorkIcon,
   },
+
   {
     id: 4,
     header: "Skills",

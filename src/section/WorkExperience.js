@@ -22,7 +22,7 @@ const WorkExperience = forwardRef((props, ref) => {
           style={{ minWidth: "50%" }}
           loop={false}
         />
-        <Box mt={8} pr={4.5}>
+        <Box mt={8} pr={4.5} ml={{ xs: 5.3, sm: 5.3, md: 0 }}>
           <Atrributes text={"Company - Sigroo Technologies"} />
           <Atrributes text={"Role - Front-end developer"} />
           <Box display={"flex"} flexWrap={"wrap"}>

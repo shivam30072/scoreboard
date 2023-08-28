@@ -12,7 +12,12 @@ export default function Home() {
   const contactRef = useRef(null);
 
   return (
-    <Box display={"flex"} minHeight={"100vh"} bgcolor={"primary.dark"}>
+    <Box
+      display={"flex"}
+      minHeight={"100vh"}
+      width={"fit-content"}
+      bgcolor={"primary.dark"}
+    >
       <Box
         height={"100vh"}
         sx={{
@@ -32,8 +37,9 @@ export default function Home() {
         />
       </Box>
       <Box
-        // overflowY={"auto"}
-        sx={{ width: { xs: "100%" }, marginLeft: { md: "17%" } }}
+        sx={{
+          marginLeft: { md: "17%" },
+        }}
       >
         <HeroSection
           workRef={workRef}

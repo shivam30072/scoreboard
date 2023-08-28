@@ -34,9 +34,9 @@ const HeroSection = forwardRef(
               color: "#fff",
             }}
           >
-            Aspiring Web{" "}
+            Aspiring Software{" "}
             <span style={{ color: "#040406ff", backgroundColor: "white" }}>
-              Developer
+              Engineer
             </span>
           </Box>
         </Box>

@@ -37,4 +37,6 @@ const NavItems = ({ header, Icon, handleSelect }) => {
   );
 };
 
+NavItems.displayName = "NavItems";
+
 export default NavItems;

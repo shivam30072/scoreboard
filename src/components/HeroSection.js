@@ -55,4 +55,6 @@ const HeroSection = forwardRef(
   }
 );
 
+HeroSection.displayName = "HeroSection";
+
 export default HeroSection;

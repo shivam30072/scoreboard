@@ -68,4 +68,6 @@ const SkillBar = ({ skill }) => {
   );
 };
 
+SkillBar.displayName = "SkillBar";
+
 export default SkillBar;

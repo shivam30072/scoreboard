@@ -106,4 +106,6 @@ const QandA = () => {
   );
 };
 
+QandA.displayName = "QandA";
+
 export default QandA;

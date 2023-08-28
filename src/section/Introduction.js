@@ -49,4 +49,6 @@ const Introduction = () => {
   );
 };
 
+Introduction.displayName = "Introduction";
+
 export default Introduction;

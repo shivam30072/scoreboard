@@ -175,4 +175,5 @@ const Atrributes = ({ text, label, bgcolor, children }) => {
   );
 };
 
+ProjectCard.displayName = "ProjectCard";
 export default ProjectCard;

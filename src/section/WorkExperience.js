@@ -73,4 +73,6 @@ const Atrributes = ({ text, label, bgcolor, children }) => {
   );
 };
 
+WorkExperience.displayName = "WorkExperience";
+
 export default WorkExperience;

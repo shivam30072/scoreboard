@@ -75,4 +75,6 @@ const WhatIDo = forwardRef((props, ref) => {
   );
 });
 
+WhatIDo.displayName = "WhatIDo";
+
 export default WhatIDo;

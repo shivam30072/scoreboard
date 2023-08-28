@@ -117,4 +117,6 @@ const NavigationBar = forwardRef(
   }
 );
 
+NavigationBar.displayName = "NavigationBar";
+
 export default NavigationBar;

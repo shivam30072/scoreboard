@@ -28,13 +28,17 @@ const SkillBar = ({ skill }) => {
         sx={{
           cursor: "pointer",
           width: { xs: "6rem", sm: "8rem", md: "10rem" },
-          "&:hover": { bgcolor: "#319eae" },
+          "&:hover": {
+            boxShadow: "0px 2px 4px 6px rgba(255, 255, 255, 0.2)",
+            bgcolor: "#fff",
+          },
           borderRadius: 1,
           bgcolor: "#fff",
           fontWeight: 900,
           fontFamily: "poppins",
           marginTop: 1,
           marginRight: 1,
+          height: "3rem",
         }}
       />
       <Dialog

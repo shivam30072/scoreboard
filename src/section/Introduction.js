@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import Header from "../Lists/Header";
 
@@ -22,23 +22,27 @@ const Introduction = () => {
       >
         <Box
           sx={{
-            backgroundImage: "url(./card.png)",
+            backgroundImage: "url(./profile.png)",
             backgroundSize: "cover",
-            height: "100%",
+            height: { xs: "50%", sm: "70%", md: "100%" },
             minWidth: "30%",
           }}
         ></Box>
-        <Box pl={1}>
-          In publishing and graphic design, Lorem ipsum is a placeholder text
-          commonly used to demonstrate the visual form of a document or a
-          typeface without relying on meaningful content. Lorem ipsum may be
-          used as a placeholder before final copy is available. In publishing
-          and graphic design, Lorem ipsum is a placeholder text commonly used to
-          demonstrate the visual form of a document or a typeface without
-          relying on meaningful content. Lorem ipsum may be used as a
-          placeholder before final copy is available. In publishing and graphic
-          design, Lorem ipsum is a placeholder text commonly used to
-          demonstrate.
+        <Box pl={1} overflow={"auto"}>
+          <Typography variant="body1">
+            Welcome to my portfolio! I'm a final-year graduate student majoring
+            in Information Technology.It has been over a year now since I
+            started web development, i am a tech enthusiast and i have spent
+            tremendous amount of time learing and practicing computer
+            programming, problem-solving, data-structutres and algorithm and
+            building web applications.
+          </Typography>
+          <Typography variant="body1" mt={1.5}>
+            I always stick to lifetime learning during my career, and I am
+            constantly learning about core computer concepts, new technologies,
+            how to write better code, and how to structure and scale gigantic
+            web applications.
+          </Typography>
         </Box>
       </Box>
     </Box>

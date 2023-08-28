@@ -36,13 +36,16 @@ const QandA = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography>Why do I like doing Developemnt ?</Typography>
+            <Typography fontWeight={900}>
+              Why do I like doing Developemnt ?
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              At the start, I was simply trying web development to land
+              internships. Yet, when I secured my first internship, I got
+              seriously hooked. Nowadays, I find myself unable to go even a day
+              without writing code.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -61,15 +64,15 @@ const QandA = () => {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <Typography>
+            <Typography fontWeight={900}>
               What motivates me and who is my inspiration ?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              I'm a self-motivated individual, but I do find inspiration from
+              remarkable individuals. One of the people I admire most is
+              Cristiano Ronaldo.
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -87,13 +90,14 @@ const QandA = () => {
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
-            <Typography>what do I do in my free time ?</Typography>
+            <Typography fontWeight={900}>
+              what do I do in my free time ?
+            </Typography>
           </AccordionSummary>
           <AccordionDetails>
             <Typography>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-              eget.
+              Most of the time, I watch anime or football. I also spent some
+              time on twitter just scrolling.
             </Typography>
           </AccordionDetails>
         </Accordion>

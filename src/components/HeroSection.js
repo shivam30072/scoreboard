@@ -34,9 +34,9 @@ const HeroSection = forwardRef(
               color: "#fff",
             }}
           >
-            Welcome to my{" "}
+            Aspiring Web{" "}
             <span style={{ color: "#040406ff", backgroundColor: "white" }}>
-              Portfolio
+              Developer
             </span>
           </Box>
         </Box>

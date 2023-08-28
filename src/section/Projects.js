@@ -12,7 +12,7 @@ const projectInfo = [
     tech: ["REACTJS", "NODEJS", "CHAKRA UI", "MONGODB"],
     image: "./ribbet.png",
     dialogImg: "./ribbetwallpaper.png",
-    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or atypeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    desc: "Real-time chat application, user can chat one to one or in group chat, responsive user-interface, fully-authenticated using json web token, socket-ui is used for real time messaging, although you might face some issues in live project.",
   },
   {
     id: 1,
@@ -22,7 +22,7 @@ const projectInfo = [
     liveApp: "https://besteats-lake.vercel.app/",
     tech: ["REACTJS", "TAILWIND"],
     dialogImg: "./bestbg.png",
-    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or atypeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    desc: "I made this project when I was learning tailwind, It's UI is similar to some other online food delivery applications that you see on internet, I have also added filtering functionality using react, It is fully responsive and can adjust to any screen sizes.",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const projectInfo = [
     liveApp: "https://scrollui.vercel.app/",
     tech: ["REACTJS", "TAILWIND"],
     dialogImg: "./scroll.png",
-    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or atypeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    desc: "It is a fun project that I made, In this UI changes when you scroll your mouse wheel slowly, diiferent pages appear on each scroll with animations, It is not working as expected after deployment but works fine on development mode.",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const projectInfo = [
     liveApp: "https://bitwise-quiz.netlify.app/",
     tech: ["HTML", "CSS", "JAVASCRIPT"],
     dialogImg: "./quizbg.png",
-    desc: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or atypeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.",
+    desc: "It was the first major project I made when I started learning web development, me and my friend build this when we were competing in a hackathon, I learned lot of things while making this.",
   },
 ];
 

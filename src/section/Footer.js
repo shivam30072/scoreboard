@@ -22,41 +22,61 @@ const Footer = () => {
         copyright&copy;2023 shivamkumar181211@gmail.com
       </Typography>
       <Box display={"flex"} gap={1} sx={{ cursor: "pointer" }}>
-        <LinkedInIcon
-          sx={{
-            color: "#0a66c2",
-            "&:hover": {
-              transition: "transform 0.3s",
-              transform: "scale(1.3)",
-            },
-          }}
-        />
-        <TwitterIcon
-          sx={{
-            color: "#62c3ff",
-            "&:hover": {
-              transition: "transform 0.3s",
-              transform: "scale(1.3)",
-            },
-          }}
-        />
-        <GitHubIcon
-          sx={{
-            "&:hover": {
-              transition: "transform 0.3s",
-              transform: "scale(1.3)",
-            },
-          }}
-        />
-        <InstagramIcon
-          sx={{
-            color: "#ff4fd5",
-            "&:hover": {
-              transition: "transform 0.3s",
-              transform: "scale(1.3)",
-            },
-          }}
-        />
+        <a
+          href={"https://www.linkedin.com/in/shivam30072/"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedInIcon
+            sx={{
+              color: "#0a66c2",
+              "&:hover": {
+                transition: "transform 0.3s",
+                transform: "scale(1.3)",
+              },
+            }}
+          />
+        </a>
+        <a
+          href={"https://twitter.com/_shivam3"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TwitterIcon
+            sx={{
+              color: "#62c3ff",
+              "&:hover": {
+                transition: "transform 0.3s",
+                transform: "scale(1.3)",
+              },
+            }}
+          />
+        </a>
+        <a
+          href={"https://github.com/shivam30072"}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHubIcon
+            sx={{
+              "&:hover": {
+                transition: "transform 0.3s",
+                transform: "scale(1.3)",
+              },
+            }}
+          />
+        </a>
+        <a href={""} target="_blank" rel="noopener noreferrer">
+          <InstagramIcon
+            sx={{
+              color: "#ff4fd5",
+              "&:hover": {
+                transition: "transform 0.3s",
+                transform: "scale(1.3)",
+              },
+            }}
+          />
+        </a>
       </Box>
     </Box>
   );

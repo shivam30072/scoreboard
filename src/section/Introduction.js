@@ -22,10 +22,13 @@ const Introduction = () => {
       >
         <Box
           sx={{
-            backgroundImage: "url(./profile.png)",
-            backgroundSize: "cover",
+            backgroundImage: "url(./profileimage.jpg)",
+            backgroundSize: "contain",
+            backgroundRepeat: "no-repeat",
             height: { xs: "50%", sm: "70%", md: "100%" },
             minWidth: "30%",
+            backgroundPosition: "center",
+            bgcolor: "white",
           }}
         ></Box>
         <Box pl={1} overflow={"auto"}>

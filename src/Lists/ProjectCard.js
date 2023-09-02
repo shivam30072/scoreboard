@@ -23,12 +23,12 @@ const ProjectCard = ({ project }) => {
   return (
     <>
       <Box
-        width={{ xs: 250, sm: 350, md: 480 }}
+        width={{ xs: "100%", md: 480 }}
         px={{ xs: 2, md: 0 }}
         height={300}
         position={"relative"}
         display={"flex"}
-        borderRadius={1}
+        borderRadius={2}
         justifyContent={"center"}
         alignItems={"center"}
         onMouseEnter={() => setShow(true)}

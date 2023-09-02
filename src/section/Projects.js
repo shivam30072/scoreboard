@@ -57,6 +57,7 @@ const Projects = forwardRef((props, ref) => {
         flexWrap={"wrap"}
         mt={4}
         mb={2}
+        px={{ xs: 1, md: 0 }}
         justifyContent={{ xs: "center", md: "center", lg: "space-around" }}
       >
         {projectInfo.map((project) => (

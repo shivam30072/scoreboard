@@ -51,11 +51,6 @@ const NavigationBar = forwardRef(
       });
     };
 
-    const getDistanceFromTop = (coords) => {
-      const { top } = coords;
-      return top;
-    };
-
     const handleSelect = (selectedItem) => {
       if (selectedItem === "Home") {
         handleScroll(homeRef);

@@ -20,7 +20,7 @@ const projectInfo = [
     image: "./dndphoto.png",
     github: "https://github.com/shivam30072/dndProject",
     liveApp: "https://dnd-apnaboard-ew6o.onrender.com/",
-    tech: ["REACTJS", "MATERIAL UI, NODEJS, MONGODB, EXPRESSJS"],
+    tech: ["REACTJS", "MATERIAL UI", "NODEJS", "MONGODB", "EXPRESSJS"],
     dialogImg: "./dndform.png",
     desc: "This is a full stack task manager application with drag and drop functionality, User can create, update and delete the tasks, user authentication is not added at the moment, i am still working on it, checkout the source code and give a star to the project on github if you liked it.",
   },

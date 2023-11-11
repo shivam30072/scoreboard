@@ -19,7 +19,7 @@ const projectInfo = [
     name: "DND TASK MANAGER",
     image: "./dndphoto.png",
     github: "https://github.com/shivam30072/dndProject",
-    liveApp: "https://6516fca5fb2df709fb7258dc--trooter2.netlify.app/",
+    liveApp: "https://653cb369af4fe74fadd5e1a5--trooter2.netlify.app/",
     tech: ["REACTJS", "MATERIAL UI", "NODEJS", "MONGODB", "EXPRESSJS"],
     dialogImg: "./dndform.png",
     desc: "This is a full stack task manager application with drag and drop functionality, User can create, update and delete the tasks, user authentication is not added at the moment, i am still working on it, checkout the source code and give a star to the project on github if you liked it.",
